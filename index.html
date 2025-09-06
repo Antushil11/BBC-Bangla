@@ -26,46 +26,73 @@
     <header>
         <div class="bg-red-600 py-5">
             <div class="max-w-7xl mx-auto px-5">
-                <img class="invert" src="./assets/logo.svg" alt="">
+                <img class="invert  " src="./assets/logo.svg" alt="">
             </div>
 
         </div>
 
-        <nav class="border-b border-gray-200 "> 
+        <nav class="border-b border-gray-200 ">
             <ul id="catagori-container" class="flex gap-10 text-lg max-w-7xl mx-auto px-5 ">
-               
+
         </nav>
     </header>
 
-    
 
 
-    
+
+
 
 
     <main class="max-w-7xl mx-auto px-5 mt-5 grid grid-cols-4 gap-5">
 
-        <div id="news-container" class="grid grid-cols-3 gap-5 col-span-3"></div>
+        <div id="news-container" class="grid grid-cols-3 gap-5 col-span-3">
+
+        </div>
 
 
-        <div id="bookmark-conatainer" class="col-span-1 border border-gray-300 rounded-lg">
+
+
+
+        <div id="bookmark-conatainer" class="col-span-1 border border-gray-300 rounded-lg overflow-hidden">
             <div class="bg-red-600 text-white p-3 rounded-sm mb-3">
                 <h1>Bookmark</h1>
+
+                <p id="bookmark-count">0</p>
             </div>
 
 
             <div id="bookmark-Container"></div>
         </div>
+        <
 
-        
-        
-        
+
+
+
 
     </main>
 
+    <!-- Open the modal using ID.showModal() method -->
+    
+    <dialog id="news_details_modal" class="modal">
+        <div class="modal-box">
+
+            <div id="modal-container">
+
+            </div>
+            <h3 class="text-lg font-bold">Hello!</h3>
+            <p class="py-4">Press ESC key or click the button below to close</p>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
 
     <script src="script.js"></script>
-   
+
 
 </body>
 
