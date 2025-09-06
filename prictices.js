@@ -110,3 +110,13 @@ const findData = data.find(d => d.id === "c1mpmx9dvrgo");
 //     console.log("data not found")
 // }
 
+
+
+const arres = ["hello", "world", "this", "is", "javascript"]
+
+let text = "";
+
+arres.forEach(a => {
+  text = text + a;
+})
+console.log(text)
